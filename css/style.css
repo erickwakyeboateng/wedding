@@ -950,6 +950,10 @@ color: #DBA39A;
     }
 }
 
+.story{
+    bottom-padding: -10;
+}
+
 /* =====  Gallery style  ===== */
 .gallery-menu li a {
         cursor: pointer;
