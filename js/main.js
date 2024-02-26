@@ -275,36 +275,30 @@
     
 }());
 
-// Countdown wedding
-  (function () {
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-  let birthday = "Mar 09, 2024 00:00:00",
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
-        let now = new Date().getTime(),
-            distance = countDown - now;
+(function () {
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
 
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+    let weddingDate = new Date("Mar 09, 2024 14:00:00").getTime();
 
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
+    let x = setInterval(function() {    
+        let now = new Date().getTime();
+        let distance = weddingDate - now;
 
-          headline.innerText = "It's our wedding!";
-          countdown.style.display = "none";
-          content.style.display = "block";
-
-          clearInterval(x);
+        if (distance > 0) {
+            document.getElementById("days").innerText = Math.floor(distance / day);
+            document.getElementById("hours").innerText = Math.floor((distance % day) / hour);
+            document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
+            document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+        } else {
+            clearInterval(x);
+            document.getElementById("countdown").style.display = "none";
+            document.getElementById("event").style.display = "block"; // Changed "countdown" to "event"
         }
-        //seconds
-      }, 0)
-  }());
+    }, 1000);
+})();
+
+
     
