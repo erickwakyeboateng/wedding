@@ -11,7 +11,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
 }
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -137,6 +137,7 @@ hr {
 .bg-img {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 .bg-fixed {
     background-attachment: fixed;
@@ -619,7 +620,7 @@ body.offcanvason .oliven-nav-toggle {
 }
 
 #header-text{
-color: #DBA39A;
+color: #fff;
 }
 
 .header .caption p {
@@ -950,7 +951,6 @@ color: #DBA39A;
     }
 }
 
-
 /* =====  Gallery style  ===== */
 .gallery-menu li a {
         cursor: pointer;
@@ -1249,19 +1249,19 @@ color: #DBA39A;
 
 /* CSS for Action Button */
 .action-button-container {
-    text-align: center; /* Align button in the center */
+    text-align: center; 
   }
   
   .action-button {
     background-color: #DBA39A; 
     border: none;
     color: white;
-    padding: 20px 40px; /* Increased padding for a larger button */
+    padding: 20px 40px; 
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px; /* Increased font size for better visibility */
-    margin: 4px auto; /* Center the button horizontally */
+    font-size: 18px; 
+    margin: 4px auto; 
     cursor: pointer;
     border-radius: 8px;
     transition-duration: 0.4s;
@@ -1269,9 +1269,9 @@ color: #DBA39A;
   
   .action-button:hover {
     background-color: #ffffff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     color: #FFB7B2; 
-    animation: bounce 0.5s infinite alternate; /* Bounce animation on hover */
+    animation: bounce 0.5s infinite alternate; 
   }
   
   @keyframes bounce {
@@ -1280,7 +1280,7 @@ color: #DBA39A;
   }
   
   .action-button:active {
-    background-color: #fff; /* Active State Green */
+    background-color: #fff;
   }
 
   
@@ -1296,15 +1296,15 @@ color: #DBA39A;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-    z-index: 1; /* Ensure overlay is positioned above the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; 
 }
 
 .bg-img {
     position: relative;
     background-size: cover;
     background-position: center center;
-    z-index: 0; /* Ensure image is positioned below the overlay */
+    z-index: 0; 
 }
 
 .bg-fixed {
@@ -1312,14 +1312,14 @@ color: #DBA39A;
 }
 
 .container {
-    position: relative; /* Ensure the container is positioned relative */
-    z-index: 2; /* Ensure content is positioned above the overlay */
+    position: relative; 
+    z-index: 2; 
 }
 
 .bg-white {
-    background-color: white; /* Background color for content */
-    padding: 40px; /* Adjust padding as needed */
-    border-radius: 8px; /* Add border-radius for rounded corners */
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 8px;
 }
 
 
@@ -1335,15 +1335,15 @@ color: #DBA39A;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-    z-index: 1; /* Ensure overlay is positioned above the image */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 .bg-img {
     position: relative;
     background-size: cover;
     background-position: center center;
-    z-index: 0; /* Ensure image is positioned below the overlay */
+    z-index: 0; 
 }
 
 .bg-fixed {
@@ -1351,25 +1351,60 @@ color: #DBA39A;
 }
 
 .container {
-    position: relative; /* Ensure the container is positioned relative */
-    z-index: 2; /* Ensure content is positioned above the overlay */
+    position: relative; 
+    z-index: 2; 
 }
 
 .section-head h4 {
-    color: white; /* Adjust text color for section heading */
+    color: white; 
 }
 
 #countdown ul {
-    color: white; /* Adjust text color for countdown timer */
+    color: white; 
     list-style: none;
     padding: 0;
 }
 
 #countdown ul li {
     display: inline-block;
-    margin-right: 20px; /* Adjust spacing between countdown items */
+    margin-right: 20px;
 }
 
 #countdown ul li:last-child {
-    margin-right: 0; /* Remove margin from last countdown item */
+    margin-right: 0;
 }
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+#home.bg-img {
+    position: relative;
+    z-index: 0; 
+    background-position: center;
+    background-size: cover;
+    animation: kenburns 20s infinite alternate;
+    background-attachment: fixed;
+}
+
+
+/* Kenburns effect */
+@keyframes kenburns {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+
+
+  
