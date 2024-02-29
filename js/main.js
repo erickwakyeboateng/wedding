@@ -281,7 +281,7 @@
           hour = minute * 60,
           day = hour * 24;
 
-    let weddingDate = new Date("Feb 29, 2024 07:13:00").getTime();
+    let weddingDate = new Date("Feb 29, 2024 07:17:00").getTime();
 
     let x = setInterval(function() {    
         let now = new Date().getTime();
