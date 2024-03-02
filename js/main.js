@@ -300,19 +300,20 @@
     }, 1000);
 })();
 
+//Add to calendar function
 function addToCalendar() {
     // Event details
     var eventTitle = "Eric Weds Phidelia";
     var eventLocation = "Church of Jesus Christ of Latter-Day Saints, Teshie";
-    var eventDescription = "Wedding ceremony of Eric and Phidelia";
+    var eventDescription = "Wedding ceremony of Phidelia and Eric";
     var startDate = new Date("2024-03-09T14:00:00");
     var endDate = new Date("2024-03-09T18:00:00");
 
-    // Format the dates as required by the calendar
+    // Formats the dates as required by the calendar
     var startDateStr = startDate.toISOString().replace(/-|:|\.\d+/g, "").slice(0, -1);
     var endDateStr = endDate.toISOString().replace(/-|:|\.\d+/g, "").slice(0, -1);
 
-    // Generate the calendar URL
+    // Generates the calendar URL
     var calContent =
         "BEGIN:VCALENDAR\n" +
         "VERSION:2.0\n" +
@@ -328,21 +329,16 @@ function addToCalendar() {
     // Base64 encode the calendar content
     var calData = btoa(calContent);
 
-    // Generate the data URL
     var calURL = "data:text/calendar;base64," + calData;
 
-    // Create an anchor element
+    //Notifies user
+    alert("To add the event to your calendar, please download the .ics file and open it using your calendar application.");
+
+    // Creates an anchor element
     var link = document.createElement('a');
     link.href = calURL;
     link.target = '_blank'; // Open in a new tab
-    link.download = 'Eric_and_Phidelia_Wedding.ics';
-
-    // Append the link to the document body and trigger the click event
-    document.body.appendChild(link);
+    link.download = 'Phidelia_and_Eric_Wedding.ics';
     link.click();
-
-    // Remove the link from the document body after a short delay
-    setTimeout(function() {
-        document.body.removeChild(link);
-    }, 100);
 }
+
