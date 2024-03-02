@@ -1569,7 +1569,8 @@ color: #DBA39A;
 }
 
 .credits{
-    font-size: small;
+    font-size: medium !important;
+    font-style: normal !important;
 }
 .credits a {
     color: #DBA39A;
