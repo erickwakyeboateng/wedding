@@ -1522,6 +1522,40 @@ color: #fff;
     transform: scale(1.1);
 }
 
+
+/* Define your CSS styles for the slider here */
+.owl-carousel {
+    /* Your styles for the slider container */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.owl-carousel .item {
+    /* Your styles for each slider item */
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .owl-carousel {
+        /* Mobile-specific styles for the slider container */
+        flex-wrap: wrap;
+    }
+
+    .owl-carousel .item {
+        /* Mobile-specific styles for each slider item */
+        flex-basis: calc(50% - 20px); /* Adjust the width as needed */
+        margin: 10px;
+    }
+}
+
+
+  
+
 .location-link {
     text-decoration: none;
 }
@@ -1530,5 +1564,8 @@ color: #fff;
     text-decoration: underline !important;
 }
 
+.ti-arrow-right{
+color: #DBA39A;
+}
 
 
