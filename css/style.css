@@ -1568,4 +1568,17 @@ color: #fff;
 color: #DBA39A;
 }
 
+.credits{
+    font-size: small;
+}
+.credits a {
+    color: #DBA39A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.credits a:hover {
+    text-decoration: underline !important;
+}
+
 
