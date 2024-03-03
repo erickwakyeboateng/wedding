@@ -249,12 +249,12 @@ hr {
 }
 
 /* ===== Sidebar style ===== */
-#oliven-page {
+#trigphil-page {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-#oliven-aside {
+#trigphil-aside {
     padding: 60px 30px;
     width: 22%;
     position: fixed;
@@ -272,12 +272,12 @@ hr {
 
 
 @media screen and (max-width: 1200px) {
-    #oliven-aside {
+    #trigphil-aside {
         width: 30%;
     }
 }
 @media screen and (max-width: 768px) {
-    #oliven-aside {
+    #trigphil-aside {
         width: 270px;
         -moz-transform: translateX(-270px);
         -webkit-transform: translateX(-270px);
@@ -287,7 +287,7 @@ hr {
         padding-top: 30px;
     }
 }
-#oliven-aside .oliven-logo {
+#trigphil-aside .trigphil-logo {
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
@@ -301,7 +301,7 @@ hr {
     line-height: 1.2em;
     letter-spacing: 0px;
 }
-#oliven-aside .oliven-logo span {
+#trigphil-aside .trigphil-logo span {
         font-family: 'Alex Brush', cursive;
     font-weight: 400;
     text-transform: none;
@@ -309,7 +309,7 @@ hr {
     font-size: 24px;
     color: #fff;
 }
-#oliven-aside .oliven-logo h6 {
+#trigphil-aside .trigphil-logo h6 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     text-transform: none;
@@ -319,19 +319,19 @@ hr {
     color: #000;
     margin-bottom: 5px;
 }
-#oliven-aside .oliven-logo img {
+#trigphil-aside .trigphil-logo img {
     width: 90px;
     margin-bottom: 0px;
 }
 @media screen and (max-width: 768px) {
-    #oliven-aside .oliven-logo {
+    #trigphil-aside .trigphil-logo {
         margin-bottom: 60px;
     }
 }
-#oliven-aside .oliven-logo a {
+#trigphil-aside .trigphil-logo a {
     display: inline-block;
 }
-#oliven-aside .oliven-logo a span {
+#trigphil-aside .trigphil-logo a span {
     display: block;
     font-size: 36px;
     color: #DBA39A;
@@ -342,27 +342,27 @@ hr {
     text-align: center;
     line-height: 1.5em;
 }
-#oliven-aside .oliven-logo a i {
+#trigphil-aside .trigphil-logo a i {
     color: #fff;
     font-size: 16px;
     vertical-align: super;
 }
-#oliven-aside .oliven-main-menu ul {
+#trigphil-aside .trigphil-main-menu ul {
     text-align: center;
     margin: 0;
     padding: 0;
 }
 @media screen and (max-width: 768px) {
-    #oliven-aside .oliven-main-menu ul {
+    #trigphil-aside .trigphil-main-menu ul {
         margin: 0 0 30px 0;
     }
 }
-#oliven-aside .oliven-main-menu ul li {
+#trigphil-aside .trigphil-main-menu ul li {
     margin: 3px 0 3px 0;
     padding: 0 0 3px 0;
     list-style: none;
 }
-#oliven-aside .oliven-main-menu ul li a {
+#trigphil-aside .trigphil-main-menu ul li a {
     color: #000;
     text-decoration: none;
     position: relative;
@@ -377,15 +377,15 @@ hr {
     transition: 0.3s;
     border-bottom: 1px solid transparent;
 }
-#oliven-aside .oliven-main-menu ul li a:hover {
+#trigphil-aside .trigphil-main-menu ul li a:hover {
     border-bottom: 1px solid #DBA39A;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out
 }
-#oliven-aside .oliven-main-menu ul li.oliven-active a {
+#trigphil-aside .trigphil-main-menu ul li.trigphil-active a {
     color: #DBA39A;
 }
-#oliven-aside .oliven-main-menu ul li.oliven-active a:after {
+#trigphil-aside .trigphil-main-menu ul li.trigphil-active a:after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -393,28 +393,28 @@ hr {
     -o-transform: scaleX(1);
     transform: scaleX(1);
 }
-#oliven-aside .oliven-main-menu ul li a span:hover {
+#trigphil-aside .trigphil-main-menu ul li a span:hover {
     color: #000;
 }
-#oliven-aside .footer1 {
+#trigphil-aside .footer-1 {
     position: absolute;
     bottom: 30px;
     right: 0;
     left: 0;
     text-align: center;
 }
-#oliven-aside .footer1 p {
+#trigphil-aside .footer-1 p {
     font-size: 12px;
     color: #888;
     letter-spacing: 0.5px;
 }
-#oliven-aside .footer1 img {
+#trigphil-aside .footer-1 img {
     width: 75px;
 }
-#oliven-aside .footer1 a {
+#trigphil-aside .footer-1 a {
     color: #DBA39A;
 }
-#oliven-aside .separator {
+#trigphil-aside .separator {
     width: 60px;
     position: relative;
     display: inline-block;
@@ -423,7 +423,7 @@ hr {
     margin: 5px auto;
 }
 @media screen and (max-width: 768px) {
-    #oliven-aside .footer1 {
+    #trigphil-aside .footer-1 {
         position: relative;
         padding-top: 60px;
     }
@@ -431,7 +431,7 @@ hr {
 
 
 /* ===== Main style ===== */
-#oliven-main {
+#trigphil-main {
     width: 78%;
     float: right;
     -webkit-transition: 0.5s;
@@ -439,37 +439,37 @@ hr {
     transition: 0.5s;
 }
 @media screen and (max-width: 1200px) {
-    #oliven-main {
+    #trigphil-main {
         width: 70%;
     }
 }
 @media screen and (max-width: 768px) {
-    #oliven-main {
+    #trigphil-main {
         width: 100%;
     }
 }
 
 
 /* ===== Navigation styles ===== */
-.oliven-nav-toggle {
+.trigphil-nav-toggle {
     cursor: pointer;
     text-decoration: none;
 }
-.oliven-nav-toggle.active i::before,
-.oliven-nav-toggle.active i::after {
+.trigphil-nav-toggle.active i::before,
+.trigphil-nav-toggle.active i::after {
     background: #fff;
 }
-.oliven-nav-toggle.dark.active i::before,
-.oliven-nav-toggle.dark.active i::after {
+.trigphil-nav-toggle.dark.active i::before,
+.trigphil-nav-toggle.dark.active i::after {
     background: #000;
 }
-.oliven-nav-toggle:hover,
-.oliven-nav-toggle:focus,
-.oliven-nav-toggle:active {
+.trigphil-nav-toggle:hover,
+.trigphil-nav-toggle:focus,
+.trigphil-nav-toggle:active {
     outline: none;
     border-bottom: none !important;
 }
-.oliven-nav-toggle i {
+.trigphil-nav-toggle i {
     position: relative;
     display: -moz-inline-stack;
     display: inline-block;
@@ -486,8 +486,8 @@ hr {
     transition: all .2s ease-out;
     top: -4px;
 }
-.oliven-nav-toggle i::before,
-.oliven-nav-toggle i::after {
+.trigphil-nav-toggle i::before,
+.trigphil-nav-toggle i::after {
     content: '';
     width: 20px;
     height: 1px;
@@ -498,7 +498,7 @@ hr {
     -o-transition: 0.2s;
     transition: 0.2s;
 }
-.oliven-nav-toggle.dark i {
+.trigphil-nav-toggle.dark i {
     position: relative;
     color: #000;
     background: #000;
@@ -506,29 +506,29 @@ hr {
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
 }
-.oliven-nav-toggle.dark i::before,
-.oliven-nav-toggle.dark i::after {
+.trigphil-nav-toggle.dark i::before,
+.trigphil-nav-toggle.dark i::after {
     background: #000;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
 }
-.oliven-nav-toggle i::before {
+.trigphil-nav-toggle i::before {
     top: -7px;
 }
-.oliven-nav-toggle i::after {
+.trigphil-nav-toggle i::after {
     bottom: -7px;
 }
-.oliven-nav-toggle:hover i::before {
+.trigphil-nav-toggle:hover i::before {
     top: -10px;
 }
-.oliven-nav-toggle:hover i::after {
+.trigphil-nav-toggle:hover i::after {
     bottom: -10px;
 }
-.oliven-nav-toggle.active i {
+.trigphil-nav-toggle.active i {
     background: transparent;
 }
-.oliven-nav-toggle.active i::before {
+.trigphil-nav-toggle.active i::before {
     top: 0;
     -webkit-transform: rotateZ(45deg);
     -moz-transform: rotateZ(45deg);
@@ -536,7 +536,7 @@ hr {
     -o-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
 }
-.oliven-nav-toggle.active i::after {
+.trigphil-nav-toggle.active i::after {
     bottom: 0;
     -webkit-transform: rotateZ(-45deg);
     -moz-transform: rotateZ(-45deg);
@@ -544,7 +544,7 @@ hr {
     -o-transform: rotateZ(-45deg);
     transform: rotateZ(-45deg);
 }
-.oliven-nav-toggle {
+.trigphil-nav-toggle {
     position: fixed;
     left: 0px;
     top: 0px;
@@ -561,7 +561,7 @@ hr {
     border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
-    .oliven-nav-toggle {
+    .trigphil-nav-toggle {
         opacity: 1;
         visibility: visible;
     }
@@ -571,7 +571,7 @@ hr {
 body.offcanvason {
     overflow-x: hidden;
 }
-body.offcanvason #oliven-aside {
+body.offcanvason #trigphil-aside {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -581,8 +581,8 @@ body.offcanvason #oliven-aside {
     z-index: 999;
     position: fixed;
 }
-body.offcanvason #oliven-main,
-body.offcanvason .oliven-nav-toggle {
+body.offcanvason #trigphil-main,
+body.offcanvason .trigphil-nav-toggle {
     top: 0;
     -moz-transform: translateX(270px);
     -webkit-transform: translateX(270px);
@@ -668,7 +668,7 @@ color: #fff;
 
 
 /* ===== Title style ===== */
-.oliven-title {
+.trigphil-title {
     color: #000;
     font-family: 'Cormorant Garamond', serif;
     margin-bottom: 0px;
@@ -677,10 +677,10 @@ color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.oliven-title span {
+.trigphil-title span {
     display: block;
 }
-.oliven-story-title {
+.trigphil-story-title {
     color: #000;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
@@ -689,7 +689,7 @@ color: #fff;
     text-transform: uppercase;
 }
 
-.oliven-story-subtitle {
+.trigphil-story-subtitle {
     display: block;
     position: relative;
     top: 12px;
@@ -700,7 +700,7 @@ color: #fff;
     line-height: 1.25em;
     margin-bottom: 10px;
 }
-.oliven-couple-title {
+.trigphil-couple-title {
      display: block;
     position: relative;
     top: 12px;
@@ -711,14 +711,14 @@ color: #fff;
     line-height: 1.5em;
     margin-bottom: 5px;
 }
-.oliven-couple-subtitle {
+.trigphil-couple-subtitle {
     color: #000;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 0;
 }
-.oliven-title-meta {
+.trigphil-title-meta {
     display: block;
     position: relative;
     top: 12px;
@@ -731,45 +731,45 @@ color: #fff;
 }
 
 
-/* ======= Bride & Groom style ======= */
-.bridegroom .item {
+/* ======= Bride & groom style ======= */
+.groom-bride .item {
   padding: 30px;
   border-radius: 0px;
   background: #fff;
   position: relative;
   overflow: hidden;
 }
-.bridegroom .img {
+.groom-bride .img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
   overflow: hidden;
   float: left;
 }
-.bridegroom .info {
+.groom-bride .info {
   margin-left: 160px;
 }
-.bridegroom .info h6 {
+.groom-bride .info h6 {
     font-size: 24px;
     margin-bottom: 5px;
 }
-.bridegroom .info h6 i {
+.groom-bride .info h6 i {
     color: #DBA39A;
     font-size: 16px;
 }
-.bridegroom .info span {
+.groom-bride .info span {
       color: #DBA39A;
     font-size: 24px;
     font-weight: 400;
     font-family: 'Alex Brush', cursive;
 }
-.bridegroom .info p {
+.groom-bride .info p {
     margin-top: 10px;
 }
-.bridegroom .info .social {
+.groom-bride .info .social {
   margin-top: 10px;
 }
-.bridegroom .info .social a {
+.groom-bride .info .social a {
   text-align: center;
   width: 35px;
   height: 35px;
@@ -780,34 +780,34 @@ color: #fff;
   margin-right: 10px;
   font-size: 12px;
 }
-.bridegroom .info .social a:hover {
+.groom-bride .info .social a:hover {
   background-color: #DBA39A;
   border-color: #DBA39A;
   color: #fff;
 }
-.bridegroom .toright .img {
+.groom-bride .toright .img {
   float: right;
 }
-.bridegroom .toright .info {
+.groom-bride .toright .info {
   margin-left: 0;
   margin-right: 160px;
   text-align: right;
 }
-.bridegroom .toright .info .social a {
+.groom-bride .toright .info .social a {
   margin-right: 0;
   margin-left: 10px;
 }
 
 @media screen and (max-width: 991px) {
-.bridegroom .img {
+.groom-bride .img {
     margin: auto;
     float: none !important;
 }
-.bridegroom .info {
+.groom-bride .info {
     margin: 30px 0 0 0 !important;
 }
     
-    .bridegroom .item, .bridegroom .toright .info {
+    .groom-bride .item, .groom-bride .toright .info {
     text-align: center;
 }
     
@@ -1083,16 +1083,16 @@ color: #fff;
 
 
 /* ===== Footer style ===== */
-.footer2 {
+.footer-2 {
     padding: 90px 30px;
     background: #faf8f7;
 }
-.footer2 img { 
+.footer-2 img { 
     width: 90px;
     margin-bottom: 10px;
 }
-.footer2 h2,
-.footer2 h2 a {
+.footer-2 h2,
+.footer-2 h2 a {
     font-family: 'Cormorant Garamond', serif;
     font-size: 36px;
     font-weight: 500;
@@ -1104,36 +1104,36 @@ color: #fff;
     letter-spacing: 0px;
     margin-bottom: 0;
 }
-.footer2 h2 a span,
-.footer2 h2 span {
+.footer-2 h2 a span,
+.footer-2 h2 span {
      display: block;
     font-family: 'Alex Brush', cursive;
     font-weight: 400;
     color: #000;
 }
-.footer2 h2 a i {
+.footer-2 h2 a i {
     color: #000;
     font-size: 16px;
     vertical-align: super;
 }
-.footer2 h6 {
+.footer-2 h6 {
     color: #888;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
 }
-.footer2 p {
+.footer-2 p {
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     font-style: italic;
     color: #888;
 }
-.footer2 .copyright {
+.footer-2 .copyright {
     color: #888;
 }
 @media screen and (max-width: 768px) {
-    .footer2 {
+    .footer-2 {
         padding: 100px 30px 80px 30px;
         text-align: center;
     }
@@ -1217,12 +1217,12 @@ color: #fff;
     padding-right: 30px;
     padding-left: 30px;
     }
-    .oliven-couple-title {
+    .trigphil-couple-title {
     font-size: 32px;
     line-height: 1.2em;
     margin-bottom: 15px;
 }
-    .oliven-couple-subtitle {
+    .trigphil-couple-subtitle {
     font-size: 18px;
 }
     #countdown .section-head h4 {
@@ -1288,11 +1288,11 @@ color: #fff;
 
   
   /* CSS for Background Overlay */
-#rsvp {
+#guestbook {
     position: relative;
 }
 
-#rsvp::before {
+#guestbook::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1432,39 +1432,39 @@ color: #fff;
 }
 
 
-.whenwhere .item .whenwhere-img {
+.timelocation .item .timelocation-img {
     position: relative;
     overflow: hidden;
 }
-.whenwhere .item .whenwhere-img:hover img {
+.timelocation .item .timelocation-img:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.whenwhere .item .whenwhere-img img {
+.timelocation .item .timelocation-img img {
     -webkit-transition: all .5s;
     transition: all .5s;
 }
-.whenwhere .item .content {
+.timelocation .item .content {
     padding: 20px 20px 30px 20px;
     background: #fff;
 }
-.whenwhere .item .content .tag a {
+.timelocation .item .content .tag a {
     color: #888;
     font-style: italic;
 }
-.whenwhere .item .content .tag a:hover {
+.timelocation .item .content .tag a:hover {
     color: #DBA39A;
 }
-.whenwhere .item .content h5 {
+.timelocation .item .content h5 {
     font-size: 21px;
     margin-top: 10px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-.whenwhere .item .content p i {
+.timelocation .item .content p i {
     color: #DBA39A;
 }
-.whenwhere-entry {
+.timelocation-entry {
     width: 100%;
     float: left;
     background: #fff;
@@ -1472,11 +1472,11 @@ color: #fff;
     box-shadow: 0 25px 75px rgba(0, 0, 0, 0.05);
 }
 @media screen and (max-width: 768px) {
-    .whenwhere-entry {
+    .timelocation-entry {
         margin-bottom: 45px;
     }
 }
-.whenwhere-entry .whenwhere-img {
+.timelocation-entry .timelocation-img {
     width: 100%;
     float: left;
     overflow: hidden;
@@ -1484,7 +1484,7 @@ color: #fff;
     z-index: 1;
     margin-bottom: 20px;
 }
-.whenwhere-entry .whenwhere-img img {
+.timelocation-entry .timelocation-img img {
     position: relative;
     max-width: 100%;
     -webkit-transform: scale(1);
@@ -1496,16 +1496,16 @@ color: #fff;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.whenwhere-entry .desc {
+.timelocation-entry .desc {
     padding: 20px;
 }
-.whenwhere-entry .desc h3 {
+.timelocation-entry .desc h3 {
     font-size: 24px;
     line-height: 1.2em;
     font-weight: 400;
     margin-bottom: 15px;
 }
-.whenwhere-entry .desc h3 a {
+.timelocation-entry .desc h3 a {
     color: #000;
     text-decoration: none;
     font-family: 'Nunito Sans', sans-serif;
@@ -1514,7 +1514,7 @@ color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.whenwhere-entry:hover .whenwhere-img img {
+.timelocation-entry:hover .timelocation-img img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -1572,6 +1572,7 @@ color: #DBA39A;
     font-size: medium !important;
     font-style: normal !important;
 }
+
 .credits a {
     color: #DBA39A;
     text-decoration: none;
@@ -1582,4 +1583,8 @@ color: #DBA39A;
     text-decoration: underline !important;
 }
 
+.credits1 a:hover{
+    text-decoration: underline !important;
+
+}
 

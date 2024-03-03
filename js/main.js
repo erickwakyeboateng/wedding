@@ -24,6 +24,7 @@
     $(window).load(function() {
     $('.preloader').fadeOut("slow");
     });
+
     // Animations
     var contentWayPoint = function () {
         var i = 0;
@@ -61,7 +62,7 @@
     
     // Burger Menu 
     var burgerMenu = function () {
-        $('.js-oliven-nav-toggle').on('click', function (event) {
+        $('.js-trigphil-nav-toggle').on('click', function (event) {
             event.preventDefault();
             var $this = $(this);
             if ($('body').hasClass('offcanvason')) {
@@ -77,18 +78,18 @@
     // Click outside of offcanvason
     var mobileMenuOutsideClick = function () {
         $(document).click(function (e) {
-            var container = $("#oliven-aside, .js-oliven-nav-toggle");
+            var container = $("#trigphil-aside, .js-trigphil-nav-toggle");
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 if ($('body').hasClass('offcanvason')) {
                     $('body').removeClass('offcanvason');
-                    $('.js-oliven-nav-toggle').removeClass('active');
+                    $('.js-trigphil-nav-toggle').removeClass('active');
                 }
             }
         });
         $(window).scroll(function () {
             if ($('body').hasClass('offcanvason')) {
                 $('body').removeClass('offcanvason');
-                $('.js-oliven-nav-toggle').removeClass('active');
+                $('.js-trigphil-nav-toggle').removeClass('active');
             }
         });
     };
@@ -127,8 +128,8 @@
             }
         }
     });
-    // When & Where owlCarousel
-    $('.whenwhere .owl-carousel').owlCarousel({
+    // Time & Location owlCarousel
+    $('.timelocation .owl-carousel').owlCarousel({
         loop: true
         , margin: 30
         , mouseDrag: true
@@ -199,7 +200,7 @@
             return false;
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
+            $target.focus(); // Sets focus again
           };
         });
       }
@@ -240,40 +241,6 @@
     }
 });
     
-     // RSVP FORM 
-    var form = $('.contact__form'),
-        message = $('.contact__msg'),
-        form_data;
-    function done_func(response) {
-        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-        form.find('input:not([type="submit"]), textarea').val('');
-    }
-    function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-    }
-    form.submit(function (e) {
-        e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func);
-    });
-    
-    
-    
-}());
 
 (function () {
     const second = 1000,
@@ -300,12 +267,15 @@
     }, 1000);
 })();
 
+
+}());
+
 //Add to calendar function
 function addToCalendar() {
     // Event details
     var eventTitle = "Eric Weds Phidelia";
-    var eventLocation = "Church of Jesus Christ of Latter-Day Saints, Teshie";
-    var eventDescription = "Wedding ceremony of Phidelia and Eric";
+    var eventLocation = "Church of Jesus Christ of Latter-Day Saints, Teshie 1st Junction";
+    var eventDescription = "Wedding ceremony of Eric and Phidelia";
     var startDate = new Date("2024-03-09T14:00:00");
     var endDate = new Date("2024-03-09T18:00:00");
 
@@ -341,4 +311,3 @@ function addToCalendar() {
     link.download = 'Phidelia_and_Eric_Wedding.ics';
     link.click();
 }
-
