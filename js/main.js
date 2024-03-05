@@ -262,7 +262,17 @@
         } else {
             clearInterval(x);
             document.getElementById("countdown").style.display = "none";
-            document.getElementById("event").style.display = "block"; // Changed "countdown" to "event"
+            document.getElementById("story").style.display = "none";
+            document.getElementById("inviteguestbook").style.display = "none";
+            document.getElementById("nav_story").style.display = "none";
+            document.getElementById("nav_countdown").style.display = "none";
+            
+            document.getElementById("event").style.display = "block";
+            document.getElementById("welcome").style.display = "block";
+            document.getElementById("eventguestbook").style.display = "block";
+            document.getElementById("nav_welcome").style.display = "block";
+            document.getElementById("nav_event").style.display = "block";
+
         }
     }, 1000);
 })();
@@ -302,7 +312,7 @@ function addToCalendar() {
     var calURL = "data:text/calendar;base64," + calData;
 
     //Notifies user
-    alert("To add the event to your calendar, please download the .ics file and open it using your calendar application.");
+    alert("To add the wedding to your calendar, please download the .ics file and open it using your calendar application.");
 
     // Creates an anchor element
     var link = document.createElement('a');
@@ -311,3 +321,7 @@ function addToCalendar() {
     link.download = 'Phidelia_and_Eric_Wedding.ics';
     link.click();
 }
+
+
+
+

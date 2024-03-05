@@ -1588,3 +1588,18 @@ color: #DBA39A;
 
 }
 
+#welcome {
+    display: none; /* Initially hide both elements */
+}
+
+#eventguestbook {
+    display: none; /* Initially hide both elements */
+}
+
+#nav_welcome {
+    display: none; /* Initially hide both elements */
+}
+
+#nav_event{
+    display:none;
+}
